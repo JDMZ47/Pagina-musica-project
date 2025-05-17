@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
     background-color: #f9f9f6; /* Color de fondo base debajo de la imagen */
     color: #2d2d2d;
-    font-family: 'Roboto', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
 }
 body::before {
@@ -24,11 +24,21 @@ body::before {
 }
 
 main section {
-    background-color: rgba(255, 255, 255, 0.88); /* Blanco ligeramente translúcido */
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(2px); /* Opcional: desenfoque suave del fondo */
+}
+main section h2 {
+    font-size: 3rem;  /* Aumentado el tamaño del título */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+main section p {
+    font-size: 1.5rem;  /* Aumentado el tamaño del párrafo */
+    color: #666;
+    line-height: 1.6;
 }
 
 
