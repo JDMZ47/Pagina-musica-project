@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comparte partituras y recursos musicales de diferentes géneros.">
+    <meta name="author" content="Tu Nombre">
     <title>Comparte Música</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pictures/fhole.png" type="image/png">
 </head>
 <body>
+    <!-- Cabecera con logo y título -->
     <header>
-    <div class="logo-titulo">
-        <img src="pictures/fhole.png" alt="Icono musical" class="logo">
-        <h1>Comparte la Música</h1>
-    </div>
+        <div class="logo-titulo">
+            <img src="pictures/fhole.png" alt="Icono musical" class="logo">
+            <h1>Comparte la Música</h1>
+        </div>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Menú hamburguesa para dispositivos pequeños -->
+        <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Categorías</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <!-- Menú hamburguesa -->
-    <div id="hamburger" class="hamburger" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-</header>
-
-    <!-- Contenido -->
+    <!-- Contenido de la página -->
     <div class="contenido">
+        <!-- Menú lateral de categorías -->
         <aside id="categories-menu">
             <h3>Categorías</h3>
             <ul>
@@ -43,6 +47,7 @@
             </ul>
         </aside>
 
+        <!-- Main con contenido principal -->
         <main>
             <section>
                 <h2>Bienvenido a Comparte Música</h2>
@@ -51,10 +56,7 @@
         </main>
     </div>
 
-    <!--footer>
-        <p>&copy; 2025 Comparte Música. Todos los derechos reservados.</p>
-    </footer-->
-
+    <!-- Script para alternar el menú -->
     <script>
         // Función para alternar el menú de categorías
         function toggleMenu() {
