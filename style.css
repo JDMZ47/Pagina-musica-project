@@ -5,13 +5,37 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color:#C8C8C8 ;/*Color de FONDO*/
+    background-image: url('pictures/flor.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f9f9f6; /* Color de fondo base debajo de la imagen */
     color: #2d2d2d;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.65); /* capa blanca semitransparente */
+    z-index: -1;
 }
 
+main section {
+    background-color: rgba(255, 255, 255, 0.88); /* Blanco ligeramente translúcido */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(2px); /* Opcional: desenfoque suave del fondo */
+}
+
+
+
+
 header {
-    background-color:#9e4523 ;/*Color de HEADER PARTE SUPERIOR*/
+    background-color:#ffdcdc ;/*Color de HEADER PARTE SUPERIOR*/
     color: #282828;/*Color de LETRAS*/
     padding: 20px;
     position: fixed;
@@ -21,6 +45,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 8px;
 }
 
 header h1 {
@@ -75,7 +110,7 @@ nav ul li a:hover {
 
 aside {
     width: 250px;
-    background-color:#F7EDE2;
+    background-color:rgba(255, 255, 255, 0.88);
     padding: 15px;
     margin-right: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -118,6 +153,10 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+
+
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
