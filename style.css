@@ -6,13 +6,13 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color:#F9F6F2 ;/*Color de FONDO*/
-    color: #333;
+    background-color:#C8C8C8 ;/*Color de FONDO*/
+    color: #2d2d2d;
 }
 
 header {
-    background-color:#EFA17F ;/*Color de HEADER PARTE SUPERIOR*/
-    color: #FFFFFF;/*Color de LETRAS*/
+    background-color:#9e4523 ;/*Color de HEADER PARTE SUPERIOR*/
+    color: #282828;/*Color de LETRAS*/
     padding: 20px;
     position: fixed;
     top: 0;
