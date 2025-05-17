@@ -1,36 +1,133 @@
-body{
-    background-color: #f4280d;
-    color:#1a1a1a;
-    font-family: 'Comic Sans MS';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
     display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contenido {
+    display: flex;
+    margin-top: 100px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+aside {
+    width: 250px; /* Se hace un poco más ancho en pantallas grandes */
+    background-color: #fff;
+    padding: 15px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
     flex: 1;
+    background-color: #fff;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-@media (min-width: 768px) {
-header{
-    font-family: 'Times New Roman', serif;
-    color: black;
-    padding: 20px;
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    width: 100%;
+    padding: 10px;
     position: fixed;
-    top: 0;
+    bottom: 0;
+    width: 100%;
 }
 
+/* Media query para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
 
-h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size:x-large;
+    nav ul {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .contenido {
+        flex-direction: column; /* Las columnas se apilan una encima de otra */
+        margin-top: 120px; /* Ajusta para dar espacio al header */
+    }
+
+    aside {
+        width: 100%; /* El aside ocupa todo el ancho en pantallas pequeñas */
+        margin-right: 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 15px;
+    }
 }
-aside{
-    margin-top: 80px;
-    width: 200px;
-    padding: 40px;
-    height:auto;
-    text-align: left;
-    display: flex;
-}
-}
+
