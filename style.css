@@ -168,50 +168,6 @@ footer {
 
 
 
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 20px;
-    }
-
-    nav ul {
-        display: none; /* Escondemos la navegación por defecto */
-    }
-
-    .contenido {
-        flex-direction: column;
-        margin-top: 120px;
-    }
-
-    aside {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    main {
-        width: 100%;
-        padding: 15px;
-    }
-
-    /* Mostrar el menú hamburguesa */
-    .hamburger {
-        display: flex;
-    }
-
-    /* El menú de categorías */
-    #categories-menu {
-        display: none;
-        width: 100%;
-        background-color: #fff;
-        padding: 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Mostrar el menú cuando está activo */
-    #categories-menu.active {
-        display: block;
-    }
-}
 @media (max-width: 768px) {
     nav {
         display: none;
