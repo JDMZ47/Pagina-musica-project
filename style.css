@@ -6,13 +6,13 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color:#F9F6F2 ;/*Color de FONDO*/
     color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color:#EFA17F ;/*Color de HEADER PARTE SUPERIOR*/
+    color: #FFFFFF;/*Color de LETRAS*/
     padding: 20px;
     position: fixed;
     top: 0;
@@ -75,7 +75,7 @@ nav ul li a:hover {
 
 aside {
     width: 250px;
-    background-color: #fff;
+    background-color:#F7EDE2;
     padding: 15px;
     margin-right: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
