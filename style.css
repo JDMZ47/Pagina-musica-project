@@ -1,67 +1,56 @@
-header {
-    background-color: #ffdcdc;
-    color: #282828;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-
+/* --- Estilos generales --- */
 body {
-    background-image: url('pictures/flor.png'); /* Asegúrate de que el nombre de la imagen sea correcto */
+    background-image: url('pictures/flor.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-color: #f9f9f6; /* Color de fondo base debajo de la imagen */
+    background-color: #f9f9f6;
     color: #2d2d2d;
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
-main section {
-    background-color: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+/* --- Estilos para los tres rectángulos --- */
+.rectangulo {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px; /* antes era 20px por todos lados */
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ffdcdc;
 }
 
-main {
-    margin-top: 120px; /* o incluso 100px */
-    flex: 1;
-    padding: 20px;
-}
 
-.contenido{
-    margin-top: 100px;
+
+.imagen {
+    max-width: 100%;
+    margin: 0 auto;
     padding: 10px;
 }
 
-.logo-titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.titulo {
+    /* mismo color */
 }
 
-.logo {
-    width: 50px;
+.botones {
+    /* mismo color */
+}
+
+/* --- Ajustar la imagen --- */
+.imagen img {
+    max-width: 30px;
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
-header h1 {
+/* --- Centrado de contenido --- */
+h1 {
     font-size: 28px;
     margin: 0;
-}
-
-/* Menú como botones centrados */
-nav {
-    margin-top: 15px;
 }
 
 nav ul {
@@ -87,50 +76,45 @@ nav ul li a:hover {
     background-color: #d37979;
 }
 
-/* --- Estilo para móviles --- */
+/* --- Responsive para móviles --- */
 @media (max-width: 768px) {
-    /* Ajustes en header */
-    header {
-        padding: 15px;
-        flex-direction: column; /* Apilar logo y título en columna */
-        text-align: center;
+    .rectangulo {
+        padding: 8px 15px;
+    }
+}
+
+
+    h1 {
+        font-size: 24px;
     }
 
-    .logo-titulo {
-        flex-direction: column; /* Logo y título apilados verticalmente */
-        gap: 10px;
-    }
-
-    header h1 {
-        font-size: 24px; /* Reducir tamaño del título */
-    }
-
-    /* Menú en móvil */
     nav ul {
-        flex-direction: column; /* Los botones del menú en columna */
-        gap: 15px; /* Aumentar el espacio entre los botones */
-        padding: 0;
+        flex-direction: column;
+        gap: 15px;
     }
 
     nav ul li a {
-        font-size: 1.1rem; /* Ajustar tamaño de fuente para enlaces */
-        padding: 12px 25px; /* Más espacio en los botones */
+        font-size: 1.1rem;
+        padding: 12px 25px;
     }
 
-    /* Ajuste de la sección principal */
     main section {
-        width: 90%; /* Reducir el ancho de la sección */
-        margin: 20px auto; /* Centrar el contenido */
+        width: 90%;
+        margin: 20px auto;
         padding: 20px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     main section h2 {
-        font-size: 1.6rem; /* Reducir tamaño de h2 */
+        font-size: 1.6rem;
     }
 
     main section p {
-        font-size: 1rem; /* Ajustar tamaño del texto */
+        font-size: 1rem;
         line-height: 1.5;
+    }
+
+    .imagen img {
+        max-width: 100px;
     }
 }
