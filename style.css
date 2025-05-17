@@ -24,25 +24,24 @@ body {
     position: relative;
 }
 
-
 main section {
     background-color: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
 main {
     margin-top: 120px; /* o incluso 100px */
     flex: 1;
     padding: 20px;
 }
 
-
-
 .contenido{
     margin-top: 100px;
     padding: 10px;
 }
+
 .logo-titulo {
     display: flex;
     flex-direction: column;
@@ -86,4 +85,52 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #d37979;
+}
+
+/* --- Estilo para móviles --- */
+@media (max-width: 768px) {
+    /* Ajustes en header */
+    header {
+        padding: 15px;
+        flex-direction: column; /* Apilar logo y título en columna */
+        text-align: center;
+    }
+
+    .logo-titulo {
+        flex-direction: column; /* Logo y título apilados verticalmente */
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 24px; /* Reducir tamaño del título */
+    }
+
+    /* Menú en móvil */
+    nav ul {
+        flex-direction: column; /* Los botones del menú en columna */
+        gap: 15px; /* Aumentar el espacio entre los botones */
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem; /* Ajustar tamaño de fuente para enlaces */
+        padding: 12px 25px; /* Más espacio en los botones */
+    }
+
+    /* Ajuste de la sección principal */
+    main section {
+        width: 90%; /* Reducir el ancho de la sección */
+        margin: 20px auto; /* Centrar el contenido */
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    main section h2 {
+        font-size: 1.6rem; /* Reducir tamaño de h2 */
+    }
+
+    main section p {
+        font-size: 1rem; /* Ajustar tamaño del texto */
+        line-height: 1.5;
+    }
 }
