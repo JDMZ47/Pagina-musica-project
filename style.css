@@ -168,9 +168,12 @@ footer {
 
 
 
+/* --- Responsive: Mostrar nav cuando tenga .active --- */
 @media (max-width: 768px) {
     nav {
         display: none;
+        background-color: #fff;
+        padding: 1rem;
     }
 
     nav.active {
@@ -189,4 +192,16 @@ footer {
         margin: 4px 0;
     }
 }
+
+/* En pantallas grandes: siempre visible y sin hamburguesa */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+}
+
 
