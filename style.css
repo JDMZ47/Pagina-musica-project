@@ -1,5 +1,5 @@
 body{
-    background-color: #fdfaf6;
+    background-color: #bb9565;
     color:#1a1a1a;
     font-family: 'Comic Sans MS';
     display: flex;
@@ -21,7 +21,10 @@ header{
 }
 
 
-
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:x-large;
+}
 aside{
     margin-top: 80px;
     width: 200px;
@@ -29,6 +32,5 @@ aside{
     height:auto;
     text-align: left;
     display: flex;
-
 }
 }
