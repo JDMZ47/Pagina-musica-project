@@ -10,6 +10,7 @@
     <link rel="icon" href="pictures/fhole.png" type="image/png">
 </head>
 <body>
+    
     <!-- Cabecera con logo y título -->
     <header>
         <div class="logo-titulo">
@@ -17,15 +18,8 @@
             <h1>Comparte la Música</h1>
         </div>
 
-        <!-- Menú hamburguesa para dispositivos pequeños -->
-        <div id="hamburger" class="hamburger" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-
         <!-- Menú de navegación -->
-        <nav id="main-nav">
+        <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="categorias.html">Categorías</a></li>
@@ -36,33 +30,22 @@
 
     <!-- Contenido de la página -->
     <div class="contenido">
-        
-
-        <!-- Main con contenido principal -->
         <main>
-            <aside id="categories-menu">
-<h3>Categorías</h3>
-<ul>
-<li><a href="#">Religioso</a></li>
-<li><a href="#">Clásico</a></li>
-<li><a href="#">Contemporáneo</a></li>
-<li><a href="#">Folklore</a></li>
-<li><a href="#">OST</a></li>
-<li><a href="#">Música Infantil</a></li>
-</ul>
-</aside>
+            <section>
+                <h2>Bienvenido a Comparte Música</h2>
+                <p>
+                    Explora una amplia variedad de partituras y recursos musicales.  
+                    Si buscas alguna canción en específico, ¡contáctame!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
+                    Magni saepe, quam tempore repellat eligendi soluta praesentium,  
+                    quae quisquam dolorem ratione porro alias voluptates debitis aut.  
+                    Repudiandae natus expedita a nihil!
+                </p>
+            </section>
         </main>
     </div>
-
-    <!-- Script para alternar el menú -->
-    <script>
-    function toggleMenu() {
-        const menu = document.getElementById("categories-menu");
-        const nav = document.getElementById("main-nav");
-        menu.classList.toggle("active");
-        nav.classList.toggle("active");
-        }
-    </script>
 
 </body>
 </html>
