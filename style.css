@@ -170,38 +170,22 @@ footer {
 
 /* --- Responsive: Mostrar nav cuando tenga .active --- */
 @media (max-width: 768px) {
-    nav {
-        display: none;
-        background-color: #fff;
-        padding: 1rem;
+    body {
+        font-size: 16px; /* tamaño de texto base */
     }
 
-    nav.active {
-        display: block;
+    nav ul li a {
+        font-size: 1rem; /* evita que el texto del nav crezca exageradamente */
     }
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
+    main, section, p, h2 {
+        font-size: 1rem;
     }
 
-    .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #333;
-        margin: 4px 0;
+    h1 {
+        font-size: 1.5rem;
     }
 }
 
-/* En pantallas grandes: siempre visible y sin hamburguesa */
-@media (min-width: 769px) {
-    .hamburger {
-        display: none;
-    }
-
-    nav {
-        display: block;
-    }
-}
 
 
