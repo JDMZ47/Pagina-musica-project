@@ -16,20 +16,22 @@
             <img src="pictures/fhole.png" alt="Icono musical" class="logo">
             <h1>Comparte la Música</h1>
         </div>
-        <!-- Menú de navegación -->
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+
         <!-- Menú hamburguesa para dispositivos pequeños -->
         <div id="hamburger" class="hamburger" onclick="toggleMenu()">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
+        <!-- Menú de navegación -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Contenido de la página -->
@@ -51,30 +53,20 @@
         <main>
             <section>
                 <h2>Bienvenido a Comparte Música</h2>
-                <p>Explora una amplia variedad de partituras y recursos musicales.<br>
-                Si buscas alguna cancion en específico, contáctame!
-            <br>juas juas
-            <br>Lorem ipsum dolor 
-            <br>sit amet consectetur, adipisicing elit. 
-            <br>Sapiente fugit modi recusandae 
-            <br>itaque molestias harum aliquid 
-            <br>soluta perspiciatis beatae eum id 
-            <br>voluptates corrupti, facilis vel 
-            <br>placeat sit a non possimus!
-            
-
-            </p>
+                <p>Explora una amplia variedad de partituras y recursos musicales. Si buscas alguna canción en específico, ¡contáctame!</p>
             </section>
         </main>
     </div>
 
     <!-- Script para alternar el menú -->
     <script>
-        // Función para alternar el menú de categorías
-        function toggleMenu() {
-            const menu = document.getElementById("categories-menu");
-            menu.classList.toggle("active");
+    function toggleMenu() {
+        const menu = document.getElementById("categories-menu");
+        const nav = document.getElementById("main-nav");
+        menu.classList.toggle("active");
+        nav.classList.toggle("active");
         }
     </script>
+
 </body>
 </html>
