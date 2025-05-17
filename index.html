@@ -36,8 +36,6 @@
 
     <!-- Contenido de la página -->
     <div class="contenido">
-        
-
         <!-- Main con contenido principal -->
         <main>
             <section>
@@ -54,15 +52,12 @@
         </main>
     </div>
 
-    <!-- Script para alternar el menú -->
+    <!-- Script para alternar solo el nav -->
     <script>
-    function toggleMenu() {
-        const menu = document.getElementById("categories-menu");
-        const nav = document.getElementById("main-nav");
-        menu.classList.toggle("active");
-        nav.classList.toggle("active");
+        function toggleMenu() {
+            const nav = document.getElementById("main-nav");
+            nav.classList.toggle("active");
         }
     </script>
-
 </body>
 </html>
