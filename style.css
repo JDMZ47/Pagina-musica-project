@@ -18,6 +18,9 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -46,15 +49,32 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Menú hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 4px;
+    background-color: #fff;
+    width: 100%;
+}
+
+/* Contenido */
 .contenido {
     display: flex;
     margin-top: 100px;
     padding: 20px;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
 aside {
-    width: 250px; /* Se hace un poco más ancho en pantallas grandes */
+    width: 250px;
     background-color: #fff;
     padding: 15px;
     margin-right: 20px;
@@ -89,7 +109,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el pie de página */
 footer {
     background-color: #333;
     color: #fff;
@@ -100,28 +119,23 @@ footer {
     width: 100%;
 }
 
-/* Media query para pantallas pequeñas (menos de 768px) */
+/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     header h1 {
         font-size: 20px;
     }
 
     nav ul {
-        flex-direction: column;
-        margin-top: 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
+        display: none; /* Escondemos la navegación por defecto */
     }
 
     .contenido {
-        flex-direction: column; /* Las columnas se apilan una encima de otra */
-        margin-top: 120px; /* Ajusta para dar espacio al header */
+        flex-direction: column;
+        margin-top: 120px;
     }
 
     aside {
-        width: 100%; /* El aside ocupa todo el ancho en pantallas pequeñas */
+        width: 100%;
         margin-right: 0;
     }
 
@@ -129,5 +143,23 @@ footer {
         width: 100%;
         padding: 15px;
     }
-}
 
+    /* Mostrar el menú hamburguesa */
+    .hamburger {
+        display: flex;
+    }
+
+    /* El menú de categorías */
+    #categories-menu {
+        display: none;
+        width: 100%;
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Mostrar el menú cuando está activo */
+    #categories-menu.active {
+        display: block;
+    }
+}

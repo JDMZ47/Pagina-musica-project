@@ -16,10 +16,17 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
+        <!-- Menú hamburguesa -->
+        <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
 
+    <!-- Contenido -->
     <div class="contenido">
-        <aside>
+        <aside id="categories-menu">
             <h3>Categorías</h3>
             <ul>
                 <li><a href="#">Religioso</a></li>
@@ -42,5 +49,13 @@
     <footer>
         <p>&copy; 2025 Comparte Música. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        // Función para alternar el menú de categorías
+        function toggleMenu() {
+            const menu = document.getElementById("categories-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
