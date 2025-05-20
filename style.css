@@ -1,39 +1,80 @@
-.containers {
+body {
+    margin: 0;
+}
+
+.contenidomain {
     display: grid;
-    grid-template-columns: 0.5fr 2.1fr 0.4fr;
-    grid-template-rows: 0.6fr 0.3fr 2.1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+    grid-template-rows: 0.6fr 0.3fr auto;
     grid-template-areas:
-        "header header header"
-        "buttonarea buttonarea buttonarea"
-        "aside_left section aside_right";
+        "header"
+        "buttonarea"
+        "main-content";
 }
 
 .header {
+    background-image: url(pictures/fhole.png), url(pictures/fhole1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 20%, 80%;
+    background-size: 100px 100px;
+    background-color: red;
     text-align: center;
-    background-color: orange;
+    font-family: fantasy;
     grid-area: header;
+    padding: 20px;
+    color: #3b2e1e;
 }
 
 .buttonarea {
+    position: sticky;
+    top:0;
+    z-index: 1000;
     text-align: center;
     background-color: pink;
     grid-area: buttonarea;
+    padding: 0.3% 2%;
+}
+
+.btn-black {
+    display: inline-block;
+    margin: 1% 2%;
+    padding: 1% 3%;
+    background: #562135;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-size: 1rem;
+    min-width: 20%;
+}
+
+.btn-black:hover {
+    background-color: #c3829e;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 0.5fr 2.1fr 0.4fr;
+    grid-template-areas: "aside_left section aside_right";
+    background-image: url(pictures/flor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: main-content;
 }
 
 .section {
-    background-color: white;
     grid-area: section;
 }
 
 .aside_left {
-    background-color: blue;
     grid-area: aside_left;
 }
 
 .aside_right {
-    background-color: blueviolet;
     grid-area: aside_right;
 }
 
+.img {
+    size: 10px; /* Note: this property doesn't exist – you might want width/height instead */
+}
