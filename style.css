@@ -1,120 +1,39 @@
-/* --- Estilos generales --- */
-body {
-    background-image: url('pictures/flor.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: #f9f9f6;
-    color: #2d2d2d;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    margin: 0;
-    padding: 0;
+.containers {
+    display: grid;
+    grid-template-columns: 0.5fr 2.1fr 0.4fr;
+    grid-template-rows: 0.6fr 0.3fr 2.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "buttonarea buttonarea buttonarea"
+        "aside_left section aside_right";
 }
 
-/* --- Estilos para los tres rectángulos --- */
-.rectangulo {
-    width: 100%;
+.header {
     text-align: center;
-    padding: 10px 20px; /* antes era 20px por todos lados */
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #ffdcdc;
+    background-color: orange;
+    grid-area: header;
 }
 
-
-
-.imagen {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 10px;
+.buttonarea {
+    text-align: center;
+    background-color: pink;
+    grid-area: buttonarea;
 }
 
-.titulo {
-    /* mismo color */
+.section {
+    background-color: white;
+    grid-area: section;
 }
 
-.botones {
-    /* mismo color */
+.aside_left {
+    background-color: blue;
+    grid-area: aside_left;
 }
 
-/* --- Ajustar la imagen --- */
-.imagen img {
-    max-width: 30px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+.aside_right {
+    background-color: blueviolet;
+    grid-area: aside_right;
 }
 
-/* --- Centrado de contenido --- */
-h1 {
-    font-size: 28px;
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #e39696;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.2s ease;
-}
-
-nav ul li a:hover {
-    background-color: #d37979;
-}
-
-/* --- Responsive para móviles --- */
-@media (max-width: 768px) {
-    .rectangulo {
-        padding: 8px 15px;
-    }
-}
-
-
-    h1 {
-        font-size: 24px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav ul li a {
-        font-size: 1.1rem;
-        padding: 12px 25px;
-    }
-
-    main section {
-        width: 90%;
-        margin: 20px auto;
-        padding: 20px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    main section h2 {
-        font-size: 1.6rem;
-    }
-
-    main section p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
-    .imagen img {
-        max-width: 100px;
-    }
-}
