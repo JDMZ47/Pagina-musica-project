@@ -78,3 +78,49 @@ body {
 .img {
     size: 10px; /* Note: this property doesn't exist – you might want width/height instead */
 }
+
+
+
+
+@media (max-width: 768px) {
+    .containers {
+        display: block;
+    }
+
+    .header {
+        text-align: center;
+        padding: 10px;
+        background-size: 60px 60px;
+        background-position: 10%, 90%;
+    }
+
+    .buttonarea {
+        position: sticky;
+        top: 0;
+        padding: 10px;
+    }
+
+    .btn-black {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .main-content {
+        display: block;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .aside_left,
+    .aside_right,
+    .section {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
