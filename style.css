@@ -28,19 +28,20 @@ body {
 }
 
 .header {
-    background-image: url(pictures/fhole.png), url(pictures/fhole1.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 20%, 80%;
-    background-size: 100px 100px;
-    background-color: #A9C6D9 ;
+    background-color: #A9C6D9;
+    background-image: url("pictures/fondoheader.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; /* ESTIRA sin cambiar tamaño del header */
+
     text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 150%;
-    font-weight: 800;
+    font-family: 'Cinzel', serif;
+    font-size: 200%;
     grid-area: header;
     padding: 20px;
     color: #3C3C3C;
 }
+
 
 .buttonarea {
     position: sticky;
@@ -53,6 +54,7 @@ body {
 }
 
 .btn-black {
+    font-family:    'Cinzel', serif;;
     display: inline-block;
     margin: 1% 2%;
     padding: 1% 3%;
@@ -239,12 +241,15 @@ ul{
     }
 
     .header {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
         text-align: center;
         padding: 10px;
-        background-size: 60px 60px;
-        background-position: 10%, 90%;
-        font-size: 100%;
+        font-size: 2.3vh;
     }
+}
 
     .buttonarea {
         position: sticky;
