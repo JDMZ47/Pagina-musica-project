@@ -29,10 +29,10 @@ body {
 
 .header {
     background-color: #A9C6D9;
-    background-image: url("pictures/fondoheader.jpg");
+    background-image: url("pictures/fondoheader.gif");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%; /* ESTIRA sin cambiar tamaño del header */
+    background-size: 100% 200%;
 
     text-align: center;
     font-family: 'Cinzel', serif;
@@ -249,7 +249,6 @@ ul{
         padding: 10px;
         font-size: 2.3vh;
     }
-}
 
     .buttonarea {
         position: sticky;
