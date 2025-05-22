@@ -4,8 +4,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    background-color: #f9f9f9;
 }
+
 .containers {
   width: 100%;
   max-width: 100%;
@@ -31,12 +32,14 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: 20%, 80%;
     background-size: 100px 100px;
-    background-color: #E0E0E0 ;
+    background-color: #A9C6D9 ;
     text-align: center;
-    font-family: fantasy;
+    font-family: 'Dancing Script', cursive;
+    font-size: 150%;
+    font-weight: 800;
     grid-area: header;
     padding: 20px;
-    color: #3b2e1e;
+    color: #3C3C3C;
 }
 
 .buttonarea {
@@ -44,7 +47,7 @@ body {
     top: 0;
     z-index: 1000;
     text-align: center;
-    background-color: #E0E0E0;
+    background-color: #A9C6D9;
     grid-area: buttonarea;
     padding: 0.3% 2%;
 }
@@ -53,7 +56,7 @@ body {
     display: inline-block;
     margin: 1% 2%;
     padding: 1% 3%;
-    background: #562135;
+    background: #2F4F4F;
     color: white;
     border: none;
     border-radius: 5%;
@@ -64,7 +67,8 @@ body {
 }
 
 .btn-black:hover {
-    background-color: #c3829e;
+    background-color: #2C7D56;
+    transform: scale(1.2);
 }
 
 
@@ -74,7 +78,7 @@ body {
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-areas: "aside_left section aside_right";
-    background-color: rgba(221, 190, 165, 0.5);
+    background-color: rgba(169, 198, 217, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -89,8 +93,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(0.3px);
     
     z-index: -1;
 }
@@ -239,6 +243,7 @@ ul{
         padding: 10px;
         background-size: 60px 60px;
         background-position: 10%, 90%;
+        font-size: 100%;
     }
 
     .buttonarea {
