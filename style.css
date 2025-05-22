@@ -31,7 +31,7 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: 20%, 80%;
     background-size: 100px 100px;
-    background-color: #ddbea5;
+    background-color: #E0E0E0 ;
     text-align: center;
     font-family: fantasy;
     grid-area: header;
@@ -44,7 +44,7 @@ body {
     top: 0;
     z-index: 1000;
     text-align: center;
-    background-color: #ddbea5;
+    background-color: #E0E0E0;
     grid-area: buttonarea;
     padding: 0.3% 2%;
 }
@@ -89,8 +89,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(221, 190, 165, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(1px);
+    
     z-index: -1;
 }
 
@@ -217,6 +218,11 @@ h4 {
     color: #fff;
 }
 
+ul{
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
 
 
 
